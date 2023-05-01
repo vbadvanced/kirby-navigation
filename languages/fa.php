@@ -10,7 +10,7 @@ return [
     'editor.label.url' => 'آدرس',
     'editor.label.text' => 'متن',
     'editor.label.title' => 'عنوان',
-    'editor.label.popup' => 'باز شدن در تب جدید؟',
+    'editor.label.popup' => 'در تب جدید باز شود؟',
     'editor.menu.close' => 'بستن',
     'editor.menu.edit' => 'ویرایش',
     'editor.menu.remove' => 'حذف',
