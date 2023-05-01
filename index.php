@@ -12,6 +12,7 @@ Kirby::plugin('chrisbeluga/navigation', [
     'translations' => [
         'de' => require_once __DIR__ . '/languages/de.php',
         'en' => require_once __DIR__ . '/languages/en.php',
+        'fa' => require_once __DIR__ . '/languages/fa.php',
         'fr' => require_once __DIR__ . '/languages/fr.php',
         'tr' => require_once __DIR__ . '/languages/tr.php',
     ],

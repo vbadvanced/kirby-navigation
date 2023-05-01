@@ -43,6 +43,7 @@
         v-model="navigation"
         childrenProp="children"
         v-bind:maxDepth="computed_levels"
+        v-bind:rtl="$translation.direction === 'rtl'"
         v-if="navigation.length">
       <template
           slot-scope="{ item, index }"
@@ -323,6 +324,10 @@ export default {
   .k-field-depth {
     text-align: right;
 
+    [dir=rtl] & {
+      text-align: left;
+    }
+
     strong {
       color: #000;
     }
@@ -341,6 +346,10 @@ export default {
         opacity: 1;
         white-space: normal;
         text-align: left;
+
+        [dir=rtl] & {
+          text-align: right;
+        }
 
         .k-menu-title {
           opacity: 1;
@@ -405,6 +414,10 @@ export default {
     margin: 0;
     padding: 0 0 0 26px;
     list-style-type: none;
+
+    [dir=rtl] & {
+      padding: 0 26px 0 0;
+    }
   }
 
   .nestable > .nestable-list {
@@ -437,6 +450,11 @@ export default {
     bottom: 0;
     background: #e6e6e6;
     transition: all 0.3s ease-in-out;
+
+    [dir=rtl] & {
+      left: 0;
+      right: 26px;
+    }
   }
 
   .nestable-drag-layer {
@@ -445,11 +463,6 @@ export default {
     left: 0;
     z-index: 100;
     pointer-events: none;
-  }
-
-  .nestable-rtl .nestable-drag-layer {
-    left: auto;
-    right: 0;
   }
 
   .nestable-handle {
