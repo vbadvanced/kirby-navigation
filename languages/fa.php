@@ -18,6 +18,6 @@ return [
     'modal.link.title' => 'افزودن صفحه',
     'modal.link.breadcrumb' => 'بازگشت',
     'modal.custom.title' => 'افزودن لینک دلخواه',
-    'help.depth.text' => 'حداکثر عمق مجاز منوها:',
+    'help.depth.text' => 'حداکثر عمق مجاز منو:',
     'help.empty.text' => 'آیتمی اضافه نشده است'
 ];
